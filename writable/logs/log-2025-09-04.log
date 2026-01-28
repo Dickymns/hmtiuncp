@@ -1,0 +1,194 @@
+CRITICAL - 2025-09-04 04:07:38 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: beranda/sejarah]
+in APPPATH\Views\beranda\sejarah.php on line 12.
+ 1 APPPATH\Views\beranda\sejarah.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\sejarah.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\sejarah.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/sejarah', [], true)
+ 5 APPPATH\Controllers\Beranda\SejarahController.php(15): view('beranda/sejarah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\SejarahController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\SejarahController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-09-04 04:08:28 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: beranda/sejarah]
+in APPPATH\Views\beranda\sejarah.php on line 12.
+ 1 APPPATH\Views\beranda\sejarah.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\sejarah.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\sejarah.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/sejarah', [], true)
+ 5 APPPATH\Controllers\Beranda\SejarahController.php(15): view('beranda/sejarah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\SejarahController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\SejarahController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-09-04 04:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:16:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:20:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-04 04:20:12 --> ErrorException: Undefined array key "deskripsi"
+[Method: GET, Route: beranda/sejarah]
+in APPPATH\Views\beranda\sejarah.php on line 12.
+ 1 APPPATH\Views\beranda\sejarah.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deskripsi"', 'C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\sejarah.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\sejarah.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/sejarah', [], true)
+ 5 APPPATH\Controllers\Beranda\SejarahController.php(15): view('beranda/sejarah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\SejarahController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\SejarahController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-09-04 04:20:20 --> ErrorException: Undefined array key "deskripsi"
+[Method: GET, Route: beranda/sejarah]
+in APPPATH\Views\beranda\sejarah.php on line 12.
+ 1 APPPATH\Views\beranda\sejarah.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deskripsi"', 'C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\sejarah.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\sejarah.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/sejarah', [], true)
+ 5 APPPATH\Controllers\Beranda\SejarahController.php(15): view('beranda/sejarah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\SejarahController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\SejarahController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-09-04 04:20:25 --> ErrorException: Undefined array key "deskripsi"
+[Method: GET, Route: beranda/sejarah]
+in APPPATH\Views\beranda\sejarah.php on line 12.
+ 1 APPPATH\Views\beranda\sejarah.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deskripsi"', 'C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\sejarah.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\sejarah.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/sejarah', [], true)
+ 5 APPPATH\Controllers\Beranda\SejarahController.php(15): view('beranda/sejarah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\SejarahController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\SejarahController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-09-04 04:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-04 04:21:07 --> ErrorException: Undefined array key "visi"
+[Method: GET, Route: beranda/visimisi]
+in APPPATH\Views\beranda\visimisi.php on line 19.
+ 1 APPPATH\Views\beranda\visimisi.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "visi"', 'C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\visimisi.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\visimisi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/visimisi', [], true)
+ 5 APPPATH\Controllers\Beranda\VisimisiController.php(15): view('beranda/visimisi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\VisimisiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\VisimisiController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-09-04 04:21:29 --> ErrorException: Undefined array key "visi"
+[Method: GET, Route: beranda/visimisi]
+in APPPATH\Views\beranda\visimisi.php on line 19.
+ 1 APPPATH\Views\beranda\visimisi.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "visi"', 'C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\visimisi.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\visimisi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/visimisi', [], true)
+ 5 APPPATH\Controllers\Beranda\VisimisiController.php(15): view('beranda/visimisi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\VisimisiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\VisimisiController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-09-04 04:21:36 --> ErrorException: Undefined array key "deskripsi"
+[Method: GET, Route: beranda/sejarah]
+in APPPATH\Views\beranda\sejarah.php on line 12.
+ 1 APPPATH\Views\beranda\sejarah.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deskripsi"', 'C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\sejarah.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\sejarah.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/sejarah', [], true)
+ 5 APPPATH\Controllers\Beranda\SejarahController.php(15): view('beranda/sejarah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\SejarahController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\SejarahController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-09-04 04:23:42 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\SejarahModel::all
+[Method: GET, Route: beranda/sejarah]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Beranda\SejarahController.php(13): CodeIgniter\Model->__call('all', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\SejarahController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\SejarahController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-09-04 04:24:12 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\SejarahModel::All
+[Method: GET, Route: beranda/sejarah]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Beranda\SejarahController.php(13): CodeIgniter\Model->__call('All', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\SejarahController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\SejarahController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-09-04 04:24:15 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\SejarahModel::All
+[Method: GET, Route: beranda/sejarah]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Beranda\SejarahController.php(13): CodeIgniter\Model->__call('All', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\SejarahController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\SejarahController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-09-04 04:33:11 --> ErrorException: Undefined array key "visi"
+[Method: GET, Route: beranda/visimisi]
+in APPPATH\Views\beranda\visimisi.php on line 19.
+ 1 APPPATH\Views\beranda\visimisi.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "visi"', 'C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\visimisi.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\app\\Views\\beranda\\visimisi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/visimisi', [], true)
+ 5 APPPATH\Controllers\Beranda\VisimisiController.php(20): view('beranda/visimisi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\VisimisiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\VisimisiController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\hmtiwebsite\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-09-04 04:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-04 04:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

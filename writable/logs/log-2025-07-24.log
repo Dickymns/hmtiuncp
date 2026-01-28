@@ -1,0 +1,1221 @@
+CRITICAL - 2025-07-24 06:20:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 06:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-24 06:20:29 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'hmti_uncp' in D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'hmti_uncp', 3306, '', 0)
+#1 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\HMTI 2025\Web HMTI\hmtiwebsite\app\Controllers\Admin\ProfilController.php(23): CodeIgniter\BaseModel->findAll()
+#7 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\CodeIgniter.php(933): App\Controllers\Admin\ProfilController->index()
+#8 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProfilController))
+#9 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\HMTI 2025\Web HMTI\hmtiwebsite\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\rewrite.php(44): require_once('D:\\HMTI 2025\\We...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'hmti_uncp' in D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\HMTI 2025\Web HMTI\hmtiwebsite\app\Controllers\Admin\ProfilController.php(23): CodeIgniter\BaseModel->findAll()
+#6 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\CodeIgniter.php(933): App\Controllers\Admin\ProfilController->index()
+#7 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProfilController))
+#8 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\HMTI 2025\Web HMTI\hmtiwebsite\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\rewrite.php(44): require_once('D:\\HMTI 2025\\We...')
+#13 {main}
+CRITICAL - 2025-07-24 06:20:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'hmti_uncp'
+[Method: GET, Route: admin/profil]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil_hmti`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Admin\ProfilController.php(23): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+ERROR - 2025-07-24 06:23:04 --> mysqli_sql_exception: Table 'hmti_uncp.admin' doesn't exist in D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 D:\HMTI 2025\Web HMTI\hmtiwebsite\app\Controllers\AuthController.php(18): CodeIgniter\BaseModel->first()
+#7 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\CodeIgniter.php(933): App\Controllers\AuthController->loginPost()
+#8 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\HMTI 2025\Web HMTI\hmtiwebsite\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\rewrite.php(44): require_once('D:\\HMTI 2025\\We...')
+#14 {main}
+CRITICAL - 2025-07-24 06:23:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'hmti_uncp.admin' doesn't exist
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\AuthController.php(18): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->loginPost()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 06:23:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'hmti_uncp.admin' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `admin`
+WHERE `username` = \'admin\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `admin`
+WHERE `username` = \'admin\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\AuthController.php(18): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->loginPost()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 06:23:04 --> [Caused by] mysqli_sql_exception: Table 'hmti_uncp.admin' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `admin`
+WHERE `username` = \'admin\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `admin`
+WHERE `username` = \'admin\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `admin`
+WHERE `username` = \'admin\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\AuthController.php(18): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->loginPost()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 06:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 06:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 06:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-24 06:25:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 06:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 06:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-24 07:23:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/beranda/header.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/beranda/header.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('admin/beranda/header', null, true)
+ 3 APPPATH\Views\beranda\beranda.php(1): CodeIgniter\View\View->include('admin/beranda/header')
+ 4 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 7 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 07:23:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "beranda/header.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('beranda/header.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/header', null, true)
+ 3 APPPATH\Views\beranda\beranda.php(1): CodeIgniter\View\View->include('beranda/header')
+ 4 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 7 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 07:33:31 --> ErrorException: Undefined variable $profil
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\profil.php on line 12.
+ 1 APPPATH\Views\beranda\profil.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $profil', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\profil.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\profil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/profil', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('beranda/profil')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 07:36:52 --> ErrorException: Undefined variable $profil_hmti
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\profil.php on line 12.
+ 1 APPPATH\Views\beranda\profil.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $profil_hmti', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\profil.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\profil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/profil', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('beranda/profil')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 07:37:12 --> ErrorException: Undefined variable $profil
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\profil.php on line 12.
+ 1 APPPATH\Views\beranda\profil.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $profil', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\profil.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\profil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/profil', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('beranda/profil')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 07:37:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "beranda/profil/index.php"
+[Method: GET, Route: beranda/profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('beranda/profil/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/profil/index', [], true)
+ 3 APPPATH\Controllers\Beranda\ProfilController.php(15): view('beranda/profil/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\ProfilController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\ProfilController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 07:40:19 --> ErrorException: Undefined variable $profil
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\profil.php on line 13.
+ 1 APPPATH\Views\beranda\profil.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $profil', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\profil.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\profil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/profil', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('beranda/profil')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 07:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:01:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:28:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:28:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 08:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-24 09:04:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "beranda/dokumen.php"
+[Method: GET, Route: beranda/dokumen]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('beranda/dokumen.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/dokumen', [], true)
+ 3 APPPATH\Controllers\Beranda\DokumenController.php(15): view('beranda/dokumen', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\DokumenController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\DokumenController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 09:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-24 09:40:13 --> Error: Call to undefined function character_limiter()
+[Method: GET, Route: beranda/proker]
+in APPPATH\Views\beranda\proker.php on line 30.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/proker', [], true)
+ 4 APPPATH\Controllers\Beranda\ProkerController.php(15): view('beranda/proker', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\ProkerController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\ProkerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 09:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-24 09:52:03 --> Error: Call to undefined function character_limiter()
+[Method: GET, Route: beranda/proker]
+in APPPATH\Views\beranda\proker.php on line 30.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/proker', [], true)
+ 4 APPPATH\Controllers\Beranda\ProkerController.php(20): view('beranda/proker', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\ProkerController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\ProkerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 09:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 09:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 10:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 10:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 10:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 10:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 10:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 10:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 10:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 10:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 10:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 10:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 10:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-24 10:22:50 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: beranda/proker/7]
+in APPPATH\Views\beranda\proker_detail.php on line 38.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/proker_detail', [], true)
+ 4 APPPATH\Controllers\Beranda\ProkerController.php(32): view('beranda/proker_detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\ProkerController->detail('7')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\ProkerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 10:24:06 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: beranda/proker/7]
+in APPPATH\Views\beranda\proker.php on line 19.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/proker', null, true)
+ 4 APPPATH\Views\beranda\proker_detail.php(24): CodeIgniter\View\View->include('beranda/proker')
+ 5 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\proker_detail.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/proker_detail', [], true)
+ 8 APPPATH\Controllers\Beranda\ProkerController.php(32): view('beranda/proker_detail', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\ProkerController->detail('7')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\ProkerController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 10:24:10 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: beranda/proker/7]
+in APPPATH\Views\beranda\proker.php on line 19.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/proker', null, true)
+ 4 APPPATH\Views\beranda\proker_detail.php(24): CodeIgniter\View\View->include('beranda/proker')
+ 5 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\proker_detail.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/proker_detail', [], true)
+ 8 APPPATH\Controllers\Beranda\ProkerController.php(32): view('beranda/proker_detail', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\ProkerController->detail('7')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\ProkerController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 10:24:35 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: beranda/proker/7]
+in APPPATH\Views\beranda\proker.php on line 19.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/proker', null, true)
+ 4 APPPATH\Views\beranda\proker_detail.php(26): CodeIgniter\View\View->include('beranda/proker')
+ 5 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\proker_detail.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/proker_detail', [], true)
+ 8 APPPATH\Controllers\Beranda\ProkerController.php(32): view('beranda/proker_detail', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\ProkerController->detail('7')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\ProkerController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 10:35:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "beranda/proker/index.php"
+[Method: GET, Route: beranda/proker]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('beranda/proker/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/proker/index', [], true)
+ 3 APPPATH\Controllers\Beranda\ProkerController.php(26): view('beranda/proker/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\ProkerController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\ProkerController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+ERROR - 2025-07-24 10:42:22 --> mysqli_sql_exception: Unknown column 'created_at' in 'order clause' in D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(4, 0)
+#6 D:\HMTI 2025\Web HMTI\hmtiwebsite\app\Controllers\Beranda\ProkerController.php(41): CodeIgniter\BaseModel->findAll(4)
+#7 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\CodeIgniter.php(933): App\Controllers\Beranda\ProkerController->detail('7')
+#8 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\ProkerController))
+#9 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\HMTI 2025\Web HMTI\hmtiwebsite\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\HMTI 2025\Web HMTI\hmtiwebsite\system\rewrite.php(44): require_once('D:\\HMTI 2025\\We...')
+#14 {main}
+CRITICAL - 2025-07-24 10:42:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+[Method: GET, Route: beranda/proker/7]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `proker`
+WHERE `id` != :id:
+ORDER BY `created_at` DESC
+ LIMIT 4', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(4, 0)
+ 4 APPPATH\Controllers\Beranda\ProkerController.php(41): CodeIgniter\BaseModel->findAll(4)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\ProkerController->detail('7')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\ProkerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 10:42:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `proker`
+WHERE `id` != \'7\'
+ORDER BY `created_at` DESC
+ LIMIT 4')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `proker`
+WHERE `id` != \'7\'
+ORDER BY `created_at` DESC
+ LIMIT 4')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `proker`
+WHERE `id` != :id:
+ORDER BY `created_at` DESC
+ LIMIT 4', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(4, 0)
+ 6 APPPATH\Controllers\Beranda\ProkerController.php(41): CodeIgniter\BaseModel->findAll(4)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\ProkerController->detail('7')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\ProkerController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 10:42:22 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `proker`
+WHERE `id` != \'7\'
+ORDER BY `created_at` DESC
+ LIMIT 4', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `proker`
+WHERE `id` != \'7\'
+ORDER BY `created_at` DESC
+ LIMIT 4')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `proker`
+WHERE `id` != \'7\'
+ORDER BY `created_at` DESC
+ LIMIT 4')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `proker`
+WHERE `id` != :id:
+ORDER BY `created_at` DESC
+ LIMIT 4', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(4, 0)
+ 7 APPPATH\Controllers\Beranda\ProkerController.php(41): CodeIgniter\BaseModel->findAll(4)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\ProkerController->detail('7')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\ProkerController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 10:42:52 --> Error: Call to undefined function word_limiter()
+[Method: GET, Route: beranda/proker/7]
+in APPPATH\Views\beranda\proker_detail.php on line 35.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/proker_detail', [], true)
+ 4 APPPATH\Controllers\Beranda\ProkerController.php(42): view('beranda/proker_detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\ProkerController->detail('7')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\ProkerController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 11:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 11:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-24 13:23:59 --> ErrorException: Undefined variable $artikel
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\artikel.php on line 12.
+ 1 APPPATH\Views\beranda\artikel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $artikel', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/artikel', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(30): CodeIgniter\View\View->include('beranda/artikel')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:25:10 --> ErrorException: Undefined variable $artikel
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\artikel.php on line 12.
+ 1 APPPATH\Views\beranda\artikel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $artikel', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/artikel', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(30): CodeIgniter\View\View->include('beranda/artikel')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:25:32 --> ErrorException: Undefined variable $artikel
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\artikel.php on line 12.
+ 1 APPPATH\Views\beranda\artikel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $artikel', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/artikel', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(30): CodeIgniter\View\View->include('beranda/artikel')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:25:35 --> ErrorException: Undefined variable $artikel
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\artikel.php on line 12.
+ 1 APPPATH\Views\beranda\artikel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $artikel', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/artikel', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(30): CodeIgniter\View\View->include('beranda/artikel')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:26:01 --> ErrorException: Undefined variable $artikel
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\artikel.php on line 12.
+ 1 APPPATH\Views\beranda\artikel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $artikel', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/artikel', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(30): CodeIgniter\View\View->include('beranda/artikel')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:26:43 --> ErrorException: Undefined variable $artikel
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\artikel.php on line 12.
+ 1 APPPATH\Views\beranda\artikel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $artikel', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/artikel', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(30): CodeIgniter\View\View->include('beranda/artikel')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:28:47 --> ErrorException: Undefined variable $artikel
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\artikel.php on line 12.
+ 1 APPPATH\Views\beranda\artikel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $artikel', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/artikel', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(29): CodeIgniter\View\View->include('beranda/artikel')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:28:50 --> ErrorException: Undefined variable $artikel
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\artikel.php on line 12.
+ 1 APPPATH\Views\beranda\artikel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $artikel', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/artikel', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(29): CodeIgniter\View\View->include('beranda/artikel')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:28:51 --> ErrorException: Undefined variable $artikel
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\artikel.php on line 12.
+ 1 APPPATH\Views\beranda\artikel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $artikel', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/artikel', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(29): CodeIgniter\View\View->include('beranda/artikel')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:28:53 --> ErrorException: Undefined variable $artikel
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\artikel.php on line 12.
+ 1 APPPATH\Views\beranda\artikel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $artikel', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/artikel', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(29): CodeIgniter\View\View->include('beranda/artikel')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:29:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "beranda/index.php"
+[Method: GET, Route: beranda/artikel]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('beranda/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/index', [], true)
+ 3 APPPATH\Controllers\Beranda\ArtikelController.php(25): view('beranda/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\ArtikelController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\ArtikelController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:31:32 --> ErrorException: Undefined variable $artikel
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\artikel.php on line 12.
+ 1 APPPATH\Views\beranda\artikel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $artikel', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/artikel', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(28): CodeIgniter\View\View->include('beranda/artikel')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:36:39 --> ErrorException: Undefined variable $artikel
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\artikel.php on line 12.
+ 1 APPPATH\Views\beranda\artikel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $artikel', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/artikel', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(28): CodeIgniter\View\View->include('beranda/artikel')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 13:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-24 13:48:04 --> ErrorException: Undefined variable $artikel
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\artikel.php on line 12.
+ 1 APPPATH\Views\beranda\artikel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $artikel', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/artikel', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(153): CodeIgniter\View\View->include('beranda/artikel')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:48:12 --> ErrorException: Undefined variable $proker
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\proker.php on line 14.
+ 1 APPPATH\Views\beranda\proker.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $proker', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\proker.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\proker.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/proker', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(153): CodeIgniter\View\View->include('beranda/proker')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:48:27 --> ErrorException: Undefined variable $profil
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\profil.php on line 13.
+ 1 APPPATH\Views\beranda\profil.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $profil', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\profil.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\profil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/profil', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(153): CodeIgniter\View\View->include('beranda/profil')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:49:08 --> ErrorException: Undefined variable $visimisi
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\visimisi.php on line 19.
+ 1 APPPATH\Views\beranda\visimisi.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $visimisi', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\visimisi.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\visimisi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/visimisi', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(153): CodeIgniter\View\View->include('beranda/visimisi')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:51:16 --> ErrorException: Undefined variable $visimisi
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\beranda.php on line 152.
+ 1 APPPATH\Views\beranda\beranda.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $visimisi', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:51:26 --> ErrorException: Undefined variable $visimisi
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\visimisi.php on line 19.
+ 1 APPPATH\Views\beranda\visimisi.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $visimisi', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\visimisi.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\visimisi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/visimisi', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(153): CodeIgniter\View\View->include('beranda/visimisi')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 13:51:34 --> ErrorException: Undefined variable $visimisi
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\beranda.php on line 152.
+ 1 APPPATH\Views\beranda\beranda.php(152): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $visimisi', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php', 152)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 14:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-24 14:53:34 --> ErrorException: Undefined variable $artikel
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\artikel.php on line 12.
+ 1 APPPATH\Views\beranda\artikel.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $artikel', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/artikel', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(54): CodeIgniter\View\View->include('beranda/artikel')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 14:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 14:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 14:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 14:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 14:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 14:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 14:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 14:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 14:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 14:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-24 15:00:54 --> ErrorException: Undefined array key "deskripsi"
+[Method: GET, Route: beranda/profil]
+in APPPATH\Views\beranda\profil.php on line 13.
+ 1 APPPATH\Views\beranda\profil.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deskripsi"', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\profil.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\profil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/profil', [], true)
+ 5 APPPATH\Controllers\Beranda\ProfilController.php(15): view('beranda/profil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Beranda\ProfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda\ProfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 15:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-24 15:03:55 --> ErrorException: Undefined variable $profil
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\profil.php on line 13.
+ 1 APPPATH\Views\beranda\profil.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $profil', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\profil.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\profil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('beranda/profil', null, true)
+ 5 APPPATH\Views\beranda\beranda.php(66): CodeIgniter\View\View->include('beranda/profil')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 9 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+CRITICAL - 2025-07-24 15:07:07 --> ErrorException: Undefined variable $profil
+[Method: GET, Route: /]
+in APPPATH\Views\beranda\beranda.php on line 65.
+ 1 APPPATH\Views\beranda\beranda.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $profil', 'D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php', 65)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\app\\Views\\beranda\\beranda.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('beranda/beranda', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('beranda/beranda')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\HMTI 2025\\Web HMTI\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 15:09:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 15:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-24 07:13:29 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: admin/struktur/delete/2]
+in APPPATH\Controllers\Admin\StrukturPengurusController.php on line 86.
+ 1 APPPATH\Controllers\Admin\StrukturPengurusController.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\hmtiwebsite\\hmtiwebsite\\app\\Controllers\\Admin\\StrukturPengurusController.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\StrukturPengurusController->delete('2')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\StrukturPengurusController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\hmtiwebsite\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 07:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 07:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 17:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 17:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 17:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 17:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-24 18:38:33 --> ErrorException: unlink(uploads/proker/1753157089_54e3c149709289e4f29e.png): No such file or directory
+[Method: GET, Route: admin/proker/delete/5]
+in APPPATH\Controllers\Admin\ProkerController.php on line 84.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(uploads/proker/1753157089_54e3c149709289e4f29e.png): No such file or directory', 'D:\\hmtiwebsite\\hmtiwebsite\\app\\Controllers\\Admin\\ProkerController.php', 84)
+ 2 APPPATH\Controllers\Admin\ProkerController.php(84): unlink('uploads/proker/1753157089_54e3c149709289e4f29e.png')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProkerController->delete('5')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProkerController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\hmtiwebsite\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 18:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-24 18:38:42 --> ErrorException: unlink(uploads/proker/1753157089_54e3c149709289e4f29e.png): No such file or directory
+[Method: GET, Route: admin/proker/delete/5]
+in APPPATH\Controllers\Admin\ProkerController.php on line 84.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(uploads/proker/1753157089_54e3c149709289e4f29e.png): No such file or directory', 'D:\\hmtiwebsite\\hmtiwebsite\\app\\Controllers\\Admin\\ProkerController.php', 84)
+ 2 APPPATH\Controllers\Admin\ProkerController.php(84): unlink('uploads/proker/1753157089_54e3c149709289e4f29e.png')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProkerController->delete('5')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProkerController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\hmtiwebsite\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 18:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-24 18:38:52 --> ErrorException: unlink(uploads/proker/1753157402_a2da85c45f14b03aadc4.png): No such file or directory
+[Method: GET, Route: admin/proker/delete/6]
+in APPPATH\Controllers\Admin\ProkerController.php on line 84.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(uploads/proker/1753157402_a2da85c45f14b03aadc4.png): No such file or directory', 'D:\\hmtiwebsite\\hmtiwebsite\\app\\Controllers\\Admin\\ProkerController.php', 84)
+ 2 APPPATH\Controllers\Admin\ProkerController.php(84): unlink('uploads/proker/1753157402_a2da85c45f14b03aadc4.png')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProkerController->delete('6')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProkerController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\hmtiwebsite\\hmtiwebsite\\public\\index.php')
+DEBUG - 2025-07-24 18:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 18:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-24 19:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
